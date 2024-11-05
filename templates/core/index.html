@@ -185,7 +185,7 @@
               </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item text-center"><b>Category</b> : {{ product.category.category_name }}</li>
-                <li class="list-group-item text-center"><b>Price</b> : {{ product.price }}</li>
+                <li class="list-group-item text-center"><b>Price</b> : SEK {{ product.price }}</li>
               </ul>
               <div class="card-footer d-flex justify-content-center" style="background-color: white;">
                 <a href="{% url 'product_desc' product.pk %}" class="btn btn-dark">View More</a>
