@@ -111,13 +111,13 @@
                         <tr>
                             <th scope="row">{{forloop.counter}}</th>
                             <td>{{order_item.product.name}}</td>
-                            <td>Rs. {{order_item.product.price}}</td>
+                            <td>SEK {{order_item.product.price}}</td>
                             <td>
                                 <a href="{% url 'add_item' order_item.product.pk %}">+</a>&nbsp;
                                 {{order_item.quantity}} &nbsp;
                                 <a href="{% url 'remove_item' order_item.product.pk %}">-</a>
                             </td>
-                            <td>Rs. {{order_item.get_total_item_price}}</td>
+                            <td>SEK {{order_item.get_total_item_price}}</td>
                         </tr>
                         {%empty%}
                         <tr class="row100 body">
@@ -135,7 +135,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><i class="fas fa-rupee-sign"></i>Rs. {{order.get_total_price}}
+                            <td><i class="fas fa-rupee-sign"></i>SEK {{order.get_total_price}}
                             </td>
                         </tr>
 
